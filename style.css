@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    
 
 }
 body{
@@ -12,6 +12,9 @@ body{
 .products{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    max-width: 950px;
+    margin-left: 180px;
+   
 }
 .product{
 
@@ -66,4 +69,57 @@ footer{
 .product h2{
     font-size: 15px;
     cursor: pointer;
+}
+
+.container{
+display: flex;
+max-width: 1600px;
+justify-content: center;
+margin: 0;
+
+}
+.page{
+    display: flex;
+  
+}
+.recent-products{
+    border: 3px solid #E8CD94;
+    background-color: white;
+    padding: 15px;
+    height: 840px;
+    width: 300px;
+    align-items: center;
+   
+    
+}
+.recent-products h2{
+    margin: 0 auto;
+    font-size: 25px;
+    width: 200px;
+
+}
+.recently {
+    padding-top: 30px;
+    text-align: center;
+ 
+}
+@media screen and (max-width:1100px){
+    .products{
+        margin-left: 0px;
+    }
+}
+@media  screen and ( max-width: 750px){
+    .page{
+        display: flex;
+        flex-direction: column;
+       
+  
+        
+    }
+    .recent-products{
+        width: 100%;
+        margin-right: px;
+        
+    }
+    
 }
