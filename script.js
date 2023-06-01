@@ -2,19 +2,36 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     let products = document.querySelector('.products');
-    let div = document.querySelector('.product')
-    const searchInput = document.querySelector(".form-control")
-    let users = []
+let product = document.getElementsByClassName('.product-title')
+    const searchInput = document.querySelector(".input")
+    let info = []
 
-    searchInput.addEventListener("input", function (e){
+    let button = document.getElementById("button-search")
+  
 
-        const value = e.target.value
-        console.log(value)
-        users.forEach( user =>{
-            const isvisible = user.title.includes(value)
-            div.style.display = "none"
-              });
-            });
+
+    
+    searchInput.addEventListener("input", (e) =>{
+
+
+            button.addEventListener("click" , (event)=>{ 
+                event.preventDefault();
+
+            const value = e.target.value
+            console.log(value)
+
+            for(let j = 0; j < 1; j++){
+            for(let i = 0; i < info.length; i++){
+
+                 if(product.innerHTML.includes(value))
+                  console.log (product)
+                };
+
+                
+                   
+            } 
+        })
+     })
 
      async function fetchProducts(url) {
         let data = await fetch(url);
@@ -22,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
      
         for (let i = 0; i <= 9; i++) {
           
-            users[i]= [response[i].title]
+            info[i]= [response[i].title]
            
             html = `<div class="product">
                 <img src="${response[i].image}" alt="" class="product-img" width="100" height="100" >
@@ -35,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
             products.innerHTML += html;
         }
     }
-    console.log(users)
+    console.log(info)
     fetchProducts("https://fakestoreapi.com/products");
     
     
