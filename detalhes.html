@@ -6,8 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+    <script src="detalhes.js"></script>
 </head>
 <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html"><img  src="logo borelli.png" alt="logo"
+              width="60" height="60"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Login <span class="sr-only">(página atual)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Cadastre-se</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Minha conta
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"> <img src="perfil.png" alt="perfil" width="20" height="20"> Perfil</a>
+                  <a class="dropdown-item" href="#"> <img src="carrinho.png" alt="carrinho" width="18" height="18">
+                    Carrinho</a>
+                </div>
+            </ul>
+            </header>
+
     <div class="box-detail">
         <h1>DESCRIÇÃO DO PRODUTO</h1>
     <div class="page-product">
@@ -15,6 +51,56 @@
         </div>
     </div>
     
-    <script src="detalhes.js"></script>
+
+<div class="total-footer">
+    <footer class="bg-(241, 241, 241)">
+        <div class="m-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h5>Formas de Pagamento</h5>
+                <ul class="list-unstyled">
+                  <li><i class="fab fa-cc-visa"></i> Visa</li>
+                  <li><i class="fab fa-cc-mastercard"></i> Mastercard</li>
+                  <li><i class="fab fa-cc-paypal"></i> PayPal</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h5>Redes Sociais</h5>
+                <ul class="list-unstyled">
+                  <li><i class="fab fa-facebook"></i> @borelli's games</li>
+                  <li><i class="fab fa-instagram"></i> @borelli's_games</li>
+                  <li><i class="fab fa-twitter"></i> @borelli's-games</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h5>Entrar em Contato</h5>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-map-marker-alt"></i> Endereço: Rua Guiven do League, 1030, Bairro: Ruptora</li>
+                  <li><i class="fas fa-envelope"></i> E-mail: henrique@borelli.com</li>
+                  <li><i class="fas fa-phone"></i> Telefone: (31) 4002-8922</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+      <footer class="bg-(280, 280, 280)">
+        <h5>© 2022 - 2023 borelli.com.</h5>
+      </footer>
+</div>
+      <!-- Links BootStrap -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+      
+
 </body>
 </html>

@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
             let html = 
             `
             <img src="${response.image}" alt="" width="200" height="200"> 
-            <h2 class="datail-title"> ${response.title} </h2>
+            <h2 class="detail-title"> ${response.title} </h2>
+            <h2 class="category"> Categoria: ${response.category}</h2>
             <p class="detail.description"> ${response.description}</p>
             
             ` 
