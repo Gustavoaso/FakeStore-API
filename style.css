@@ -13,13 +13,16 @@ body {
 
 html,
 body {
-    min-height: 100%;
+    height: 100%;
 }
 
 .logo{
     mix-blend-mode:multiply;
 }
-
+#cabecalho{
+    padding: 0 5px;
+   
+}
 h1 {
     text-align: center;
     text-transform: uppercase;
@@ -196,13 +199,12 @@ button:hover {
 }
 
 .total-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
+  margin-top: 20px;
+display: flex;
+flex-direction: column;
+justify-content: end;
+width: 100%;
 }
-
-
 
 
 
@@ -219,13 +221,21 @@ button:hover {
     }
 
     .recent-products {
-        width: 100%;
-        margin-right: px;
+     margin-top: 10px;
+     width: 100%;
+       
+       
+        
+
+    }
+    .products{
+        grid-template-columns: 1fr 1fr;
+        margin: 0px;
 
     }
 
-    .total-footer {
-        position: unset;
+    .product{
+       margin: 0px;
     }
 
 }
